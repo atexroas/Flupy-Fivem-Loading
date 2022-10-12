@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div class="backgound-informations">
+        
+        <h1><img src="src/image/logo.png"></h1>
+        <div class="background-updates">
+            
+            <div class="type-update">UPDATE</div>
+            <p>UPDATE- Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus natus mollitia aliquid? Neque voluptatum vero magni veniam maxime quod quis ea quos aliquid nostrum repellendus corrupti, veritatis, perspiciatis velit!</p>
+            
+            <div class="type-news">NEWS</div>
+            <p>UPDATE- Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius, repudiandae iste, in nisi vitae hic architecto repellendus quo asperiores adipisci doloremque earum iure provident placeat ducimus maiores laborum voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, iure? At, debitis aliquid optio consectetur id accusamus consequatur, laboriosam, voluptatem impedit cum commodi enim quo quibusdam accusantium sapiente nihil voluptas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum voluptatum aliquid aperiam inventore consequuntur repellat earum! Repudiandae ex, rerum rem est inventore necessitatibus atque molestiae quae exercitationem, perspiciatis labore?</p>        
+        
+        </div>
+    </div>
+    <div class="background-prévention">
+       <div class="text-prévention">Conformément aux conditions d'utilisation de FiveM <a href="https://fivem.net/terms">(https://fivem.net/terms)</a>, nous ne pouvons récompenser nos donateurs. Par conséquent, aucun dédommagement ne pourra être fait. La seule exception est l'ajout d'un groupe « Donateur » sur le discord. L'équipe de ATX | Dev's.</div>
+    </div>
+
+
+    <audio id="loading" src="music/music.mp3" autoplay="true" hidden="true" loop="true"></audio>
+</body>
+</html>
+
+<script>
+    var play = false;
+            var vid = document.getElementById("loading");
+            vid.volume = 0.1;
+            window.addEventListener('keyup', function(e)
+            {
+                if (e.which == 69){
+                    vid.volume = Math.min(vid.volume + 0.1,1);
+                } else if(e.which == 65){
+                    vid.volume = Math.max(vid.volume - 0.1,0);
+                };
+            });
+    
+            var audio = document.querySelector('audio');
+    
+            if (audio) {
+    
+            window.addEventListener('keydown', function (event) {
+    
+            var key = event.which || event.keyCode;
+    
+            if (key === 32) { // spacebar
+    
+            event.preventDefault();
+    
+            audio.paused ? audio.play() : audio.pause();
+          
+        }
+    
+      });
+    }
+    </script>
+

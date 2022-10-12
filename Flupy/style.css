@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100&display=swap');
+
+body {
+    background-image: url(src/image/fond.png); 
+    margin: 30px;
+}
+
+.backgound-informations { 
+    background-color: #41403fd7;
+    height: 800px;
+    width: 800px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Albert Sans', sans-serif;
+    margin-top: 20px;
+    color: white;
+
+}
+
+
+.backgound-informations img {
+    background: radial-gradient( rgba(22, 22, 22, 0.586) 0%, transparent 60%);
+}
+
+.background-prévention {
+    border-left: 7px solid rgb(129, 191, 233);
+    background-color: #41403fd7;
+    height: auto;
+    width: 795px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Geo', sans-serif;
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+
+}
+
+.background-updates p {
+    background-color: #41403fd7;
+    height: auto;
+    width: 760px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 20px;
+    
+}
+
+.background-updates p {
+    border-left: 7px solid rgb(182, 91, 243)
+}
+
+.background-prévention a {
+    color: rgb(179, 179, 179);
+}
+
+.type-update {
+    background-color: #41403fd7;
+    border-radius: 20px;
+    width: 80px;
+}
+
+.type-news {
+    background-color: #41403fd7;
+    border-radius: 20px;
+    width: 80px;
+}
+
